@@ -1,20 +1,21 @@
- export const CourseInfo = ({coursename,instituteName}) => {
+ export const CourseInfo = ({coursename,instituteName,contact}) => {
     return (
-        <table border="4px">
+         
+        <table border="4px" color="red">
         
           <td>Course Name</td>
           <td>:</td>
-          <td>{coursename}</td>
+          <td><span style={{color:"red"}}>{coursename}</span></td>
         
         <tr>
           <td>Institute</td>
           <td>:</td>
-          <td>{instituteName}</td>
+          <td><span style={{color:"green"}}>{instituteName}</span></td>
         </tr>
         <tr>
           <td>contact</td>
           <td>:</td>
-          <td>8446158196</td>
+          <td>{contact}</td>
         </tr>
         <tr>
           <td>City</td>

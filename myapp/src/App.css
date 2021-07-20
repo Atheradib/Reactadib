@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+div{
+  background-color: pink;
+  
+  
+}
+table{
+  border-radius: 20px;
+  background-color: aqua;
+  
+}
