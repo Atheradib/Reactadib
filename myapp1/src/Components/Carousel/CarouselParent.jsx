@@ -1,2 +1,8 @@
 import React from "react";
-import {CarouselChild} from "react-bootstrap"
+import {CarouselChild} from "./CarouselChild"
+
+const CarouselParent = () => {
+    return(
+        <CarouselChild />
+    )
+}
