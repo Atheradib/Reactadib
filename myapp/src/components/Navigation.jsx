@@ -5,7 +5,7 @@ import { Nav,Form,Button } from "react-bootstrap";
 export const Navigation = () => {
     return (
       <div>
-      <div>
+      <div class="Nav1">
       <Nav
   activeKey="/home"
   onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
@@ -26,7 +26,7 @@ export const Navigation = () => {
   </Nav.Item>
 </Nav> 
 </div>
-<div>
+<div class="form1">
 <Form>
   <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
