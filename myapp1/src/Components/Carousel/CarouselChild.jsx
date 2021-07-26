@@ -1,6 +1,7 @@
 import React from "react";
 import {Carousel} from "react-bootstrap"
 export const CarouselChild = ({data1}) => {
+  console.log("okookokokkkk===>",data1)
      return (
        <div>
         <Carousel>

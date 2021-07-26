@@ -7,7 +7,7 @@ export const CarouselReducer = {
          carouselImg2:"./Assets/scene2.jpg",
          carouselCaption2:"Nature2",
          CarouselDescription2:"Nature is Beautiful2" ,
-         carouselImg3:"./Assests/scene3.jpg",
+         carouselImg3:"./Assets/scene3.jpg",
          carouselCaption3:"Nature3",
          CarouselDescription3:"Nature is Beautiful3" 
         },
