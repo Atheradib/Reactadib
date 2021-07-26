@@ -1,8 +1,14 @@
 import React from "react";
-import {CarouselChild} from "./CarouselChild"
+import {CarouselChild} from "./CarouselChild";
+import {CarouselReducer} from "../../reducers/CarouselReducer"
 
-const CarouselParent = () => {
+export const CarouselParent = () => {
     return(
-        <CarouselChild />
+        <div>
+        {CarouselReducer.Data.map((item)=>{
+            return<CarouselChild data1={item}/>
+
+        })}
+        </div>
     )
 }
