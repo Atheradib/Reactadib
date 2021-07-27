@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Row, Col, Form, Card, Button } from "react-bootstrap";
+import { Row, Col, Form, Card, Button, Image } from "react-bootstrap";
 import { FormsReducer } from "../reducers/FormsReducer";
+import "./Forms.css";
 
 export const Forms = () => {
   const { firstName, lastName, lineNo1, lineNo2, CityName } =
@@ -10,15 +11,25 @@ export const Forms = () => {
   const [line1, setline1] = useState(lineNo1);
   const [line2, setline2] = useState(lineNo2);
   const [city, setcity] = useState(CityName);
+  const [bulbstate, setBulbState] = useState("on");
   return (
     <div>
       <Row>
-        <Col md={2}></Col>
+        <Col md={2}>
+          <Image
+            src={`Assets/bulb${bulbstate}.png`}
+            width="100px"
+            onClick={() =>
+              bulbstate === "off" ? setBulbState("on") : setBulbState("off")
+            }
+          ></Image>
+        </Col>
+        {/* {-----------------card1---------------} */}
         <Col md={4}>
           <Card>
             <Row>
               <Col>
-                <Form>
+                <Form className="inform">
                   <Form.Group>
                     <Row>
                       <Col>
@@ -75,21 +86,22 @@ export const Forms = () => {
                         ></Form.Control>
                       </Col>
                     </Row>
+                    <Row>
+                      <Col>
+                        <Button variant="primary">Submit</Button>
+                      </Col>
+                    </Row>
                   </Form.Group>
                 </Form>
               </Col>
             </Row>
           </Card>
         </Col>
+        {/* {---------------Card2-----------------} */}
         <Col md={4}>
           <Row>
             <Col>
-              <Button variant="primary">Submit</Button>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Card>
+              <Card className="personinfo">
                 <Row>
                   <Col>
                     <h3>{`${fname} ${lname}`}</h3>
