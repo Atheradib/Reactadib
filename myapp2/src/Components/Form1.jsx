@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { Row, Col, Form, Card, Button, Image } from "react-bootstrap";
-import { FormsReducer } from "../reducers/FormsReducer";
-import "./Forms.css";
+// import { FormsReducer } from "../reducers/FormsReducer";
+import "./Form1.css";
 
-export const Forms = () => {
-  const { firstName, lastName, lineNo1, lineNo2, CityName } =
-    FormsReducer.Data[0];
-  const [fname, setfName] = useState(firstName);
-  const [lname, setlName] = useState(lastName);
-  const [line1, setline1] = useState(lineNo1);
-  const [line2, setline2] = useState(lineNo2);
-  const [city, setcity] = useState(CityName);
+export const Form1 = () => {
+  //   const { firstName, lastName, lineNo1, lineNo2, CityName } =
+  // FormsReducer.Data[0];
+  const [fname, setfName] = useState("-");
+  const [lname, setlName] = useState("-");
+  const [line1, setline1] = useState("-");
+  const [line2, setline2] = useState("-");
+  const [city, setcity] = useState("-");
   const [bulbstate, setBulbState] = useState("on");
   return (
     <div>
