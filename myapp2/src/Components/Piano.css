@@ -1,0 +1,8 @@
+.btn{
+    height: 80px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 25px !important;
+    background-color: aquamarine !important;
+    color: black !important;
+}
