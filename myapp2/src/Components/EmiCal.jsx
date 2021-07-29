@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, Button, Card, Row, Col } from "react-bootstrap";
+import { Form, Button, Card, Row, Col, Number } from "react-bootstrap";
 import "./EmiCal.css";
 
 export const EmiCal = () => {
