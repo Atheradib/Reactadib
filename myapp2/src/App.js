@@ -1,11 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Piano } from "./Components/Piano";
+import { EmployeeParent } from "./Components/EmployeeParent";
 
 function App() {
   return (
     <div className="App">
-      <Piano />
+      <EmployeeParent />
     </div>
   );
 }
