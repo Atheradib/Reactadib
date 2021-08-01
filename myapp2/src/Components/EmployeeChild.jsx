@@ -4,7 +4,7 @@ import { Card, Image } from "react-bootstrap";
 export const EmployeeChild = ({ kuchbhi }) => {
   return (
     <Card className="employeeItem">
-      <h4>Employee Item</h4>
+      <h4>Employee Id</h4>
       <Image src={`${kuchbhi.cardImage}`}></Image>
       <span>Name: {`${kuchbhi.employeeName}`}</span>
       <span>Designation : {`${kuchbhi.designation}`}</span>
