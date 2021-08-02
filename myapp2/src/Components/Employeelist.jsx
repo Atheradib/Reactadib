@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Card, Row, Col, Form } from "react-bootstrap";
 import { EmployeeItem } from "./EmployeeItem";
 import { FormsReducer } from "../reducers/FormsReducer";
