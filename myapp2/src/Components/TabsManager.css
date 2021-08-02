@@ -1,0 +1,10 @@
+.nav-item{
+    background-color: aqua !important;
+    color: black;
+}
+.active{
+    background-color: chartreuse;
+}
+.tab-content{
+    padding: 10px;
+}

@@ -3,7 +3,7 @@ import { Row, Col, Card, Button } from "react-bootstrap";
 import "./Piano.css";
 
 export const Piano = () => {
-  const handlePlay = () => {
+  const handlePlay = (bit) => {
     const audio = new Audio(`Music/${bit}.mp3`);
     audio.play();
   };
@@ -17,6 +17,12 @@ export const Piano = () => {
     if (e.key === "l" && handlePlay("ni"));
     e.stopPropagation();
   });
+  // useEffect(() => {
+  //   document.addEventListener("keydown", keyDownCallBack);
+  //   return () => {
+  //     document.removeEventListener("keydown", keyDownCallBack);
+  //   };
+  // }, [keyDownCallBack]);
   return (
     <div>
       <Card>
