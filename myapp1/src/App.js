@@ -1,23 +1,23 @@
 import logo from "./logo.svg";
 import "./App.css";
-// import { Navigation } from "./Components/Routes/Navigation";
-// import { AboutUs } from "./Components/Routes/AboutUs";
-// import { ContactUs } from "./Components/Routes/ContactUs";
-// import Services from "./Components/Routes/Services";
-// import { Home } from "./Components/Routes/Home";
-// import { Courses } from "./Components/Routes/Courses";
-
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import { Login } from "./Components/Login";
+import { Navigation } from "./Components/Routes/Navigation";
+import { AboutUs } from "./Components/Routes/AboutUs";
+import { ContactUs } from "./Components/Routes/ContactUs";
+import { Home } from "./Components/Routes/Home";
+import { Courses } from "./Components/Routes/Courses";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Navigation } from "./Components/Pages/Navigation";
-import { Benefits } from "./Components/Pages/Benefits";
-import { ZAMS } from "./Components/Pages/ZAMS";
-import { Sales } from "./Components/Pages/Sales";
-import { Services } from "./Components/Pages/Services";
+import { EmiCal } from "./Components/Routes/EmiCal";
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import { Navigation } from "./Components/Pages/Navigation";
+// import { Benefits } from "./Components/Pages/Benefits";
+// import { ZAMS } from "./Components/Pages/ZAMS";
+// import { Sales } from "./Components/Pages/Sales";
+// import { Services } from "./Components/Pages/Services";
 function App() {
   return (
     <div className="App">
-      {/* <Router>
+      <Router>
         <Navigation />
         <Switch>
           <div>
@@ -27,8 +27,8 @@ function App() {
             <Route path="/ContactUs">
               <ContactUs />
             </Route>
-            <Route path="/Services">
-              <Services />
+            <Route path="/EmiCal">
+              <EmiCal />
             </Route>
             <Route path="/Home">
               <Home />
@@ -36,13 +36,16 @@ function App() {
             <Route path="/Courses">
               <Courses />
             </Route>
-            <Route exact path="/">
+            {/* <Route path="/">
               <Home />
-            </Route>
+            </Route> */}
+            {/* <Route path="/">
+              <Login />
+            </Route> */}
           </div>
         </Switch>
-      </Router> */}
-      <Router>
+      </Router>
+      {/* <Router>
         <Navigation />
         <Switch>
           <div>
@@ -64,6 +67,7 @@ function App() {
           </div>
         </Switch>
       </Router>
+    </div> */}
     </div>
   );
 }

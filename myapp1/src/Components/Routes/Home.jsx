@@ -1,5 +1,10 @@
 import React from "react";
+import { Login } from "../Login";
 
 export const Home = () => {
-  return <div>This is Home</div>;
+  return (
+    <div>
+      <Login />
+    </div>
+  );
 };

@@ -12,7 +12,7 @@ export const Navigation = () => {
           <Nav className="me-auto">
             <NavLink to="/AboutUs">AboutUs</NavLink>
             <NavLink to="/Courses">Courses</NavLink>
-            <NavLink to="/Services">Services</NavLink>
+            <NavLink to="/EmiCal">EmiCal</NavLink>
             <NavLink to="/ContactUs">ContactUs</NavLink>
           </Nav>
         </Container>
