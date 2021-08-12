@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Button, Col, Row, Card, Form } from "react-bootstrap";
 import "./Login.css";
 import { userData } from "../reducers/Config";
@@ -9,6 +9,8 @@ export const Login = () => {
   const [pass, setpass] = useState("");
   const [isNotValid, setIsNotValid] = useState(true);
   const [isSuccess, setIsSuccess] = useState(false);
+  const eleUserName = useRef();
+  const elePassword = useRef();
   useEffect(() => {
     if (name.length >= 5 && pass.length >= 6) {
       setIsNotValid(false);
@@ -21,6 +23,14 @@ export const Login = () => {
       }
     } else setIsNotValid(true);
   }, [name, pass]);
+  useEffect(() => {
+    if (localStorage.getItem("userName")) {
+      eleUserName.current.value = localStorage.getItem("userName");
+      elePassword.current.focus();
+    } else {
+      eleUserName.current.focus();
+    }
+  }, []);
   return (
     <div>
       {isSuccess ? (
@@ -34,8 +44,9 @@ export const Login = () => {
               <Col md={12}>
                 <Form.Control
                   type="text"
-                  placeholder="name"
+                  placeholder="user Name"
                   onChange={(e) => setname(e.target.value)}
+                  ref={eleUserName}
                 ></Form.Control>
               </Col>
               <Col md={12}>
@@ -43,6 +54,7 @@ export const Login = () => {
                   type="password"
                   placeholder="Enter password"
                   onChange={(e) => setpass(e.target.value)}
+                  ref={elePassword}
                 ></Form.Control>
               </Col>
             </Row>

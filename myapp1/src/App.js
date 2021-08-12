@@ -1,13 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
-// import { Login } from "./Components/Login";
-import { Navigation } from "./Components/Routes/Navigation";
-import { AboutUs } from "./Components/Routes/AboutUs";
-import { ContactUs } from "./Components/Routes/ContactUs";
-import { Home } from "./Components/Routes/Home";
-import { Courses } from "./Components/Routes/Courses";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { EmiCal } from "./Components/Routes/EmiCal";
+// // import { Login } from "./Components/Login";
+// import { Navigation } from "./Components/Routes/Navigation";
+// import { AboutUs } from "./Components/Routes/AboutUs";
+// import { ContactUs } from "./Components/Routes/ContactUs";
+// import { Home } from "./Components/Routes/Home";
+// import { Courses } from "./Components/Routes/Courses";
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import { EmiCal } from "./Components/Routes/EmiCal";
+
+import { Login } from "./Components/Login";
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import { Navigation } from "./Components/Pages/Navigation";
 // import { Benefits } from "./Components/Pages/Benefits";
@@ -17,7 +19,7 @@ import { EmiCal } from "./Components/Routes/EmiCal";
 function App() {
   return (
     <div className="App">
-      <Router>
+      {/* <Router>
         <Navigation />
         <Switch>
           <div>
@@ -35,16 +37,16 @@ function App() {
             </Route>
             <Route path="/Courses">
               <Courses />
-            </Route>
-            {/* <Route path="/">
+            </Route> */}
+      {/* <Route path="/">
               <Home />
             </Route> */}
-            {/* <Route path="/">
+      {/* <Route path="/">
               <Login />
             </Route> */}
-          </div>
+      {/* </div>
         </Switch>
-      </Router>
+      </Router> */}
       {/* <Router>
         <Navigation />
         <Switch>
@@ -68,6 +70,7 @@ function App() {
         </Switch>
       </Router>
     </div> */}
+      <Login />
     </div>
   );
 }

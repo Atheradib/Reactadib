@@ -1,11 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Clock } from "./Components/Clock";
+import { EmiCal } from "./Components/EmiCal";
 
 function App() {
   return (
     <div className="App">
-      <Clock />
+      <EmiCal />
     </div>
   );
 }
