@@ -1,11 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Navigation } from "./components/Navigation";
+import { FetchingDataFromRedux } from "./components/state/Redux/FetchingDataFromRedux";
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
+      <FetchingDataFromRedux />
     </div>
   );
 }
