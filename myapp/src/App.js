@@ -1,11 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { FetchingDataFromRedux } from "./components/state/Redux/FetchingDataFromRedux";
-
+import { EmpDetails1 } from "./components/state/Redux/EmpDetails1";
 function App() {
   return (
     <div className="App">
-      <FetchingDataFromRedux />
+      <EmpDetails1 />
     </div>
   );
 }

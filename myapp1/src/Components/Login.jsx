@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { Button, Col, Row, Card, Form } from "react-bootstrap";
 import "./Login.css";
 import { userData } from "../reducers/Config";
-// import { userData } from "../reducers/Config";
 
 export const Login = () => {
   const [name, setname] = useState("");
