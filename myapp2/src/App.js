@@ -1,11 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { EmiCal } from "./Components/EmiCal";
+import { DynamicComp } from "./Components/DynamicComp";
+// import { EmiCal } from "./Components/EmiCal";
 
 function App() {
   return (
     <div className="App">
-      <EmiCal />
+      {/* <EmiCal /> */}
+      <DynamicComp />
     </div>
   );
 }
